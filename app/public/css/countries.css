@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Стили для header */
+header {
+    height: 75px;
+    background-color: #111; /* чуть мягче, чем твой темно-коричневый */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* лёгкая тень для глубины */
+}
+
+/* Заголовок */
+h1.header-text {
+    color: #fff;
+    font-size: 1.8rem; /* более гибкий размер */
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1.5px; /* чуть больше воздуха между буквами */
+}
+
+.countries {
+    display: flex;
+    flex-wrap: wrap;       /* чтобы карточки переносились на новую строку */
+    gap: 20px;             /* расстояние между карточками */
+    justify-content: center; /* центрируем весь блок */
+    padding: 20px;
+}
+
+.country {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    height: 250px; /* фиксированная высота */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.country:hover {
+    transform: scale(1.05); /* увеличиваем на 5% */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* чуть тень для эффекта "всплытия" */
+}
+
+.country img {
+    width: 100%;
+    height: 120px;        /* фиксированная высота для флага */
+    object-fit: cover;    /* чтобы флаг заполнял блок без искажений */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.country h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.country p {
+    margin: 2px 0;
+    font-size: 0.9em;
+}
+
+

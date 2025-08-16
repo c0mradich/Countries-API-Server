@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="css/countries.css">
+</head>
+<body>
+    <%- include('components/header') %>
+    <main>
+        <div class="countries">
+            <% for (const country of data) { %>
+            <div class="country">
+                <h2><%= country.name.common %></h2>
+                <p>Столица: <%= country.capital ? country.capital[0] : 'Нет' %></p>
+                <p>Регион: <%= country.region %></p>
+                <p>Население: <%= country.population.toLocaleString() %></p>
+                <img src="<%= country.flags.png %>" alt="Flag of <%= country.name.common %>" width="100">
+            </div>
+            <% } %>
+        </div>
+    </main>
+</body>
+</html>
