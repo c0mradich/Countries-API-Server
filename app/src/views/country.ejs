@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="http://localhost:3000/css/countries.css">
+    <link rel="stylesheet" href="http://localhost:3000/css/country.css">
+</head>
+<body>
+    <%- include('components/header') %>
+    <main>
+        <div class="countryStat">
+                <h2><%= data.name.common %></h2>
+                <img src="<%= data.flags.png %>" alt="Flag of <%= data.name.common %>" height="300px">
+                <p>Столица: <%= data.capital ? data.capital[0] : 'Нет' %></p>
+                <p>Регион: <%= data.region %></p>
+                <p>Население: <%= data.population.toLocaleString() %></p>
+        </div>
+    </main>
+    <%- include('components/footer') %>
+</body>
+</html>

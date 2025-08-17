@@ -68,4 +68,49 @@ h1.header-text {
     font-size: 0.9em;
 }
 
+.site-footer {
+  background: #1e1e2f;
+  color: #bbb;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-family: sans-serif;
+}
 
+.site-footer h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.site-footer p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #aaa;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+.socials li a {
+  color: #bbb;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+.socials li a:hover {
+  color: #4da3ff;
+}
+
+.footer-bottom {
+  border-top: 1px solid #2a2a3d;
+  padding-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #666;
+}

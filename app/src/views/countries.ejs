@@ -16,10 +16,12 @@
                 <p>Столица: <%= country.capital ? country.capital[0] : 'Нет' %></p>
                 <p>Регион: <%= country.region %></p>
                 <p>Население: <%= country.population.toLocaleString() %></p>
+                <a href="/country/<%= country.name.common.toLocaleString() %>"><%= country.name.common.toLocaleString() %></a>
                 <img src="<%= country.flags.png %>" alt="Flag of <%= country.name.common %>" width="100">
             </div>
             <% } %>
         </div>
     </main>
+    <%- include('components/footer') %>
 </body>
 </html>
