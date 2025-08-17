@@ -1,6 +1,6 @@
 # Countries API Server
 Uses node.js as back-end language to obtain some data via API
-Commands to rn the project:
+## Commands to run the project:
 1. git clone https://github.com/c0mradich/Countries-API-Server
 2. cd Countries/API/Server
 3. cd app
