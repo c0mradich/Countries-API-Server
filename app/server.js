@@ -16,6 +16,10 @@ app.use('/', routes);
 app.set('view engine', 'ejs');
 app.set('views', 'src/views');
 
+app.use((req, res)=>{
+    res.redirect("/countries")
+})
+
 // Запуск сервера
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
